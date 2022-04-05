@@ -1,0 +1,69 @@
+@font-face{
+    font-family: turnip, serif;
+    src: url(https://use.typekit.net/gzk6ifs.css)
+}
+:root{
+    --backgroundpurp: #957DAD;
+    --typeboxcolor: #E0BBE4;
+    --textcolor: #FEC8D8;
+    --typetextcolor: #D291BC;
+}
+body{
+    background-color: var(--backgroundpurp);
+}
+#title{
+    text-align: center;
+    font-family: turnip, serif;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--textcolor);
+}
+.mainSec{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: turnip, serif;
+    font-weight: 500;
+    padding: 25 125 25 125;
+    border-radius: 25px;
+    background-color: var(--typeboxcolor);
+}
+#typeBox{
+    padding: 0.4rem 1rem;
+    border-radius: 0.2rem;
+    font-size: 1.2rem;
+    border-color: var(--textcolor);
+    font-family: turnip, serif;
+    font-weight: 200;
+}
+
+#sentence{
+    display: flex;
+    color: black;
+}
+
+#wpm, #accuracy{
+    text-align: right;
+}
+
+#redo{
+    font-family: turnip, serif;
+    font-weight: 500;
+    font-style: italic;
+    background-color: lavenderblush;
+    padding: 0.4rem 1rem;
+    border-color: pink;
+    border-radius: 0.2rem;
+}
+.wrong{
+    color: red;
+}
+.right{
+    color:green;
+}
+.hightlight{
+    color: white;
+}

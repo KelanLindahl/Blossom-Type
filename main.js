@@ -1,5 +1,6 @@
 const textTest= document.querySelector('#wordSec');
 const userText=document.getElementById("typeBox");
+
 var rightText=["dog", "blog", "storm", "sword", "cats"];
 var i=0;
 

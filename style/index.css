@@ -9,6 +9,7 @@
     --typetextcolor: #D291BC;
 }
 body{
+    background-image: url("backgroundFlowers.png");
     background-color: var(--backgroundpurp);
 }
 #title{

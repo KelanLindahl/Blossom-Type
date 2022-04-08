@@ -1,6 +1,6 @@
 # BlossomType
 
-This is a typing test built with Javscript/HTML/CSS, inspired by my favorite colors as well as typings.gg! It's currently a WIP & I still have more to do before I can call it done :).
+This is a typing test built with Javscript/HTML/CSS, inspired by my favorite colors & flowers, as well as a "recreation"/inspiration by typings.gg! It's currently a WIP & I still have more to do before I can call it done :).
 
 Want to check out the progress? please take a look at https://kelanlindahl.github.io/Blossom-Type/
 

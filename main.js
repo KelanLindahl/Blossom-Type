@@ -1,12 +1,16 @@
-const textTest= document.querySelector('#wordSec');
-const userText=document.getElementById("typeBox");
 
-var rightText=["dog", "blog", "storm", "sword", "cats"];
-var i=0;
+var rightText=["dog", "blog", "storm", "sword", "cats", "they", "awesome", "apple"];
+var wordIndex=0;
+var startDate=Date.now();
 
 document.addEventListener('DOMContentLoaded', function(e){
     const textTest= document.querySelector('#Tester');
     const userText=document.getElementById("typeBox");
+    var wpmC=document.getElementById("wpm");
+    var correctWord=0;
+    var wpm=0;
+    var textLength=rightText.length;
+
     rightText.forEach(word => {
         let span=document.createElement('span');
         span.textContent=word + ' ';
@@ -18,16 +22,27 @@ document.addEventListener('DOMContentLoaded', function(e){
     document.addEventListener('keypress',function(ev){ 
         if(ev.key == " "){
             let typedInput=userText.value.replace(/\s/g, '');
-             if(typedInput==rightText[i]){
+             if(typedInput==rightText[wordIndex]){
                 console.log("right");
-                textTest.childNodes[i].style.color="green";
+                correctWord+=1;
+                textTest.childNodes[wordIndex].style.color="green";
+                console.log(getAcc(correctWord, textLength));
+                wpmacc.textContent="WPM: " + wpm + " || Accuracy: " + getAcc(correctWord, textLength);
+
             }else{
                 console.log("wrong");
-                textTest.childNodes[i].style.color="red";
+                textTest.childNodes[wordIndex].style.color="red";
             }
-        i++;
+            if (wordIndex==textLength){
+                console.log(getAcc(correctWord, textLength));
+            }
+        wordIndex++;
         userText.value="";
-        
+        console.log((Date.now() - startDate) / 1000 / 60);
         }
     });
+    function getAcc(correctWord, textLength){
+        let acc=correctWord/textLength * 100;
+        return acc;
+    }
 });

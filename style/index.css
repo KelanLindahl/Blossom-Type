@@ -9,7 +9,7 @@
     --typetextcolor: #D291BC;
 }
 body{
-    background-image: url("backgroundFlowers.png");
+    /* background-image: url("backgroundFlowers.png"); */
     background-color: var(--backgroundpurp);
 }
 #title{
@@ -28,10 +28,14 @@ body{
     transform: translate(-50%, -50%);
     font-family: turnip, serif;
     font-weight: 500;
+    
+}
+.typeArea{
+    background-color: var(--typeboxcolor);
     padding: 25 125 25 125;
     border-radius: 25px;
-    background-color: var(--typeboxcolor);
 }
+
 #typeBox{
     padding: 0.4rem 1rem;
     border-radius: 0.2rem;
@@ -46,10 +50,11 @@ body{
     color: black;
 }
 
-#wpm, #accuracy{
-    text-align: right;
+#wpmacc{
+    display: flex;
+    justify-content: center;
+    font-size: small;
 }
-
 #redo{
     font-family: turnip, serif;
     font-weight: 500;
@@ -58,6 +63,10 @@ body{
     padding: 0.4rem 1rem;
     border-color: pink;
     border-radius: 0.2rem;
+}
+
+#wpmacc{
+    justify-content: right;
 }
 .wrong{
     color: red;
